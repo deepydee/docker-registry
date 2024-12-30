@@ -18,7 +18,7 @@ docker-build:
 	docker compose build
 
 password:
-	docker run registry:2.6 htpasswd -Bbn registry password > htpasswd
+	docker run --rm registry:2.6 htpasswd -Bbn su picachu20 > htpasswd
 
 deploy:
 	ssh ${HOST} -p ${PORT} 'rm -rf registry && mkdir registry'
