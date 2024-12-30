@@ -19,3 +19,4 @@ yarn-error.log
 docker/sql/*
 !docker/sql/.gitkeep
 !docker/sql/testing.sql
+/htpasswd
